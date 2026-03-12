@@ -3,104 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo Coffee（エストードコーヒー）| 松戸の自家焙煎豆販売</title>
-    <meta name="description" content="千葉県松戸市から厳選されたコーヒー豆を丁寧に自家焙煎してお届けします。Estudo Coffeeで、あなただけの特別な一杯を見つけませんか？">
-    <meta name="keywords" content="自家焙煎,豆販売,松戸,コーヒー,通販,オンラインショップ,Estudo Coffee">
-    
+    <title>Grão de café estudo -by OJI- | 松戸の受注生産・送料無料の焙煎所</title>
+    <meta name="description" content="千葉県松戸市の小さな焙煎所。最高の素材を全国どこでも一袋から送料無料でお届けします。">
     <style>
-        /* 全体のデザイン設定 */
+        :root {
+            --main-brown: #2c1e1a;
+            --accent-gold: #c2a371;
+            --bg-cream: #fdfaf5;
+            --line-green: #06C755;
+        }
         body { 
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; 
-            text-align: center; 
-            padding: 50px 20px; 
-            background-color: #f8f5f2; 
-            color: #3e2723; 
-            margin: 0;
-        }
-        
-        /* ロゴ画像の設定 */
-        img { 
-            max-width: 200px; 
-            height: auto;
-            margin-bottom: 20px; 
-            border-radius: 10px; 
-        }
-        
-        /* 見出しのデザイン */
-        h1 { 
-            font-size: 2.2em; 
-            margin-bottom: 10px; 
-            letter-spacing: 1px;
-        }
-        
-        /* 文章のデザイン */
-        p { 
-            font-size: 1.1em; 
+            background-color: var(--bg-cream); 
+            color: var(--main-brown); 
+            font-family: "Hiragino Mincho ProN", serif; 
             line-height: 1.8; 
-            margin-bottom: 30px; 
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        .container { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 60px 40px; 
+            border-radius: 2px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            text-align: center; 
         }
         
-        /* ボタン共通のデザイン */
-        .btn {
-            display: block;
-            width: 260px;
-            margin: 15px auto;
-            padding: 15px;
+        .logo-img { max-width: 280px; height: auto; margin-bottom: 20px; }
+        .header-area { border-bottom: 2px solid var(--main-brown); padding-bottom: 30px; margin-bottom: 40px; }
+        
+        .free-shipping-badge { 
+            background: var(--main-brown); 
+            color: white; 
+            display: inline-block; 
+            padding: 5px 20px; 
+            font-size: 0.85rem; 
+            letter-spacing: 0.1rem; 
+            margin-bottom: 15px; 
+        }
+
+        h2 { 
+            font-size: 1.3rem; 
+            border-left: 4px solid var(--main-brown); 
+            padding-left: 15px; 
+            text-align: left; 
+            margin: 40px 0 20px; 
+        }
+        .description { text-align: left; font-size: 1rem; color: #444; }
+
+        .current-bean { 
+            background-color: #fcf8f2; 
+            border: 1px solid var(--accent-gold); 
+            padding: 30px; 
+            margin: 40px 0; 
+            text-align: center; 
+        }
+        .bean-title { font-size: 1.5rem; color: var(--main-brown); margin-bottom: 10px; font-weight: bold; }
+        
+        /* ボタンを並べるエリア */
+        .purchase-options { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin-top: 25px; 
+        }
+        .option-card { 
+            background: white; 
+            border: 1px solid #ddd; 
+            padding: 25px 20px; 
+            border-radius: 4px; 
+            width: 280px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .option-name { font-weight: bold; margin-bottom: 10px; color: var(--main-brown); }
+        .price { font-size: 1.4rem; color: #8b4513; margin-bottom: 5px; font-weight: bold; }
+        .limit-info { font-size: 0.75rem; color: #d9534f; margin-bottom: 15px; font-weight: bold; }
+
+        .btn-stripe { 
+            display: block; 
+            background-color: #6772e5; 
+            color: white !important; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            border-radius: 4px; 
+            transition: 0.3s; 
+        }
+        .btn-stripe:hover { 
+            background-color: #5469d4; 
+            transform: translateY(-2px); 
+        }
+        .btn-raw { background-color: #6b8e23; } 
+        .btn-raw:hover { background-color: #556b2f; }
+
+        /* SNSセクション */
+        .sns-section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px dashed #ccc;
+        }
+        .sns-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .sns-btn {
+            display: inline-block;
+            width: 240px;
+            padding: 12px;
             text-decoration: none;
-            border-radius: 30px;
+            color: white !important;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.3s;
         }
+        .btn-line { background-color: var(--line-green); }
+        .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .sns-btn:hover { opacity: 0.8; transform: translateY(-2px); }
 
-        .btn:hover { 
-            transform: scale(1.05); 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
+        .roast-grid { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .roast-grid th { background: var(--main-brown); color: white; padding: 12px; font-weight: normal; }
+        .roast-grid td { padding: 12px 10px; border-bottom: 1px solid #eee; font-size: 0.9rem; text-align: left; }
+        .lv1 { background-color: #e6ccb2; } 
+        .lv-mid { background-color: #fdf5e6; } 
+        .lv5 { background-color: #7f5539; color: white; } 
+        .lv9 { background-color: #331800; color: white; } 
 
-        /* LINEボタン（緑） */
-        .line-btn {
-            background-color: #06C755;
-            color: white !important;
-        }
+        footer { margin-top: 60px; font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 30px; }
 
-        /* インスタボタン（グラデーション） */
-        .insta-btn {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            color: white !important;
-        }
-
-        /* 画面が小さい時（スマホ）の調整 */
         @media (max-width: 480px) {
-            h1 { font-size: 1.8em; }
-            p { font-size: 1em; }
-            .btn { width: 80%; }
+            .container { padding: 30px 15px; }
+            .option-card { width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <img src="logo.png" alt="Estudo Coffee ロゴ">
+<div class="container">
+    <div class="header-area">
+        <img src="logo.png" alt="Grão de café estudo ロゴ" class="logo-img">
+    </div>
 
-    <h1>Estudo Coffee</h1>
+    <div class="description">
+        <p>千葉県松戸市の小さな焙煎所<strong>「Grão de café estudo」</strong>。</p>
+        <p>単一銘柄の研究に没頭し、その時々で最高の素材を、<strong>全国どこでも一袋から送料無料</strong>でお届けします。</p>
+    </div>
 
-    <p>
-        こだわりの豆、至福の一杯をあなたに。<br>
-        千葉県松戸市より、一粒一粒丁寧に焙煎した<br>
-        新鮮なコーヒー豆をお届けします。<br><br>
-        ただいまオンラインショップ準備中です。
-    </p>
+    <div class="current-bean">
+        <div class="free-shipping-badge">FREE SHIPPING</div>
+        <div class="bean-title">今月の研究銘柄：スペシャリティコーヒー</div>
+        
+        <div class="purchase-options">
+            <div class="option-card">
+                <div>
+                    <div class="option-name">【受注後焙煎】</div>
+                    <div class="price">100g / 1,000円</div>
+                    <div class="limit-info">※12段階の焙煎指定可</div>
+                </div>
+                <a href="https://buy.stripe.com/00w28rahT9Mg7YG9xW0VO00" class="btn-stripe">焙煎豆を購入する</a>
+            </div>
+
+            <div class="option-card">
+                <div>
+                    <div class="option-name">【ハンドピック済み 生豆】</div>
+                    <div class="price">100g / 800円</div>
+                    <div class="limit-info">※ご自宅で焙煎される方向け</div>
+                </div>
+                <a href="https://buy.stripe.com/6oU6oH0Hj2jO92K7pO0VO01" class="btn-stripe btn-raw">生豆を購入する</a>
+            </div>
+        </div>
+        <p style="font-size: 0.8rem; color: #d9534f; margin-top: 20px; font-weight: bold;">※配送の都合上、1度のご注文は合計4袋(400g)までとなります。</p>
+    </div>
+
+    <h2>12段階の焙煎指定（焙煎豆のみ）</h2>
+    <p class="description">焙煎豆をご購入の方は、Stripe決済画面の<strong>「ご希望の焙煎番号」</strong>欄に、1〜12の番号を必ずご記入ください。</p>
     
-    <a href="https://lin.ee/H9qfA09" class="btn line-btn" target="_blank">
-        LINEで友だち追加
-    </a>
+    <table class="roast-grid">
+        <thead><tr><th>No.</th><th>焙煎度</th><th>特徴</th></tr></thead>
+        <tbody>
+            <tr class="lv1"><td>1 - 3</td><td>浅煎り</td><td>華やかな酸味と豆本来のフルーティーさ</td></tr>
+            <tr class="lv-mid"><td>4 - 6</td><td>中煎り</td><td>酸味と甘みの調和。マイルドな口当たり</td></tr>
+            <tr class="lv5"><td>7 - 9</td><td>中深煎り</td><td>心地よい苦味と深いコク。一番人気</td></tr>
+            <tr class="lv9"><td>10 - 12</td><td>深煎り</td><td>力強い苦味とスモーキーな余韻</td></tr>
+        </tbody>
+    </table>
 
-    <a href="https://www.instagram.com/estudo_coffee_matsudo/" class="btn insta-btn" target="_blank">
-        Instagramを見る
-    </a>
+    <div class="sns-section">
+        <h3>Follow & Contact</h3>
+        <p style="font-size: 0.9rem;">最新情報やお問い合わせはこちらから</p>
+        <div class="sns-buttons">
+            <a href="https://lin.ee/H9qfA09" class="sns-btn btn-line" target="_blank">公式LINE 友だち追加</a>
+            <a href="https://www.instagram.com/estudo_coffee_matsudo/" class="sns-btn btn-insta" target="_blank">Instagramを見る</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Grão de café estudo -by OJI-</p>
+        <p>〒271-0068 千葉県松戸市古ヶ崎192-6</p>
+        <p>&copy; 2026 Grão de café estudo. All Rights Reserved.</p>
+    </footer>
+</div>
 
 </body>
 </html>
