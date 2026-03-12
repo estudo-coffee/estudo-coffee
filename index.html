@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo Coffee（エストードコーヒー）| 松戸の自家焙煎豆販売</title>
     <meta name="description" content="千葉県松戸市から厳選されたコーヒー豆を丁寧に自家焙煎してお届けします。Estudo Coffeeで、あなただけの特別な一杯を見つけませんか？">
-    <meta name="keywords" content="自家焙煎,豆販売,松戸,コーヒー,通販,オンラインショップ">
+    <meta name="keywords" content="自家焙煎,豆販売,松戸,コーヒー,通販,オンラインショップ,Estudo Coffee">
     
     <style>
         /* 全体のデザイン設定 */
@@ -43,33 +43,47 @@
             margin-right: auto;
         }
         
-        /* インスタグラムボタンのデザイン */
-        .insta-btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            color: white !important;
+        /* ボタン共通のデザイン */
+        .btn {
+            display: block;
+            width: 260px;
+            margin: 15px auto;
+            padding: 15px;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .insta-btn:hover { 
+
+        .btn:hover { 
             transform: scale(1.05); 
             box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
+        /* LINEボタン（緑） */
+        .line-btn {
+            background-color: #06C755;
+            color: white !important;
+        }
+
+        /* インスタボタン（グラデーション） */
+        .insta-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white !important;
+        }
+
+        /* 画面が小さい時（スマホ）の調整 */
         @media (max-width: 480px) {
             h1 { font-size: 1.8em; }
             p { font-size: 1em; }
+            .btn { width: 80%; }
         }
     </style>
 </head>
 <body>
 
-    <img src="ロゴ.png" alt="Estudo Coffee ロゴ">
+    <img src="logo.png" alt="Estudo Coffee ロゴ">
 
     <h1>Estudo Coffee</h1>
 
@@ -80,8 +94,12 @@
         ただいまオンラインショップ準備中です。
     </p>
     
-    <a href="https://www.instagram.com/estudo_coffee_matsudo/" class="insta-btn" target="_blank">
-        Instagramで最新情報を見る
+    <a href="https://lin.ee/H9qfA09" class="btn line-btn" target="_blank">
+        LINEで友だち追加
+    </a>
+
+    <a href="https://www.instagram.com/estudo_coffee_matsudo/" class="btn insta-btn" target="_blank">
+        Instagramを見る
     </a>
 
 </body>
