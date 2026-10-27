@@ -196,7 +196,10 @@ a:focus-visible,summary:focus-visible {outline:3px solid #a6732b;outline-offset:
 @media(max-width:700px){body{padding:12px 10px;}.container{padding:22px 10px 30px;}.header-area{margin-bottom:24px;padding-bottom:16px;}.logo-img{width:135px;}.cafe-hero{grid-template-columns:1fr;}.hero-copy{padding:30px 24px;}.hero-copy h2{font-size:29px;}.coffee-photo img{height:auto;max-height:none;aspect-ratio:3/2;object-position:center;}.coffee-photo figcaption{font-size:10px;}.intro-line{font-size:14px;padding:24px 12px;}.current-bean{padding:26px 16px;margin:30px 0;}.bean-title{font-size:22px;}.purchase-options{grid-template-columns:1fr;gap:16px;}.option-card{width:100%;padding:24px 16px;}.price{font-size:1.45rem;}h2{font-size:21px;padding-left:12px;}.description{font-size:15px;}.roast-comparison{padding:12px 4px;}.roast-comparison h3{font-size:20px;}.roast-photos{gap:10px;}.roast-photos img{border-width:3px;}.roast-photos b{font-size:12px;}.roast-photos span{font-size:10px;letter-spacing:0;}.roast-grid th,.roast-grid td{padding:10px 5px;font-size:13px;}.roast-grid th:first-child{width:22%;}.roast-grid th:nth-child(2){width:25%;}.roast-grid th:nth-child(3){width:53%;}.sns-btn{width:100%;max-width:300px;}.sns-buttons{gap:12px;}.credits a{display:inline-block;padding-block:8px;min-height:40px;}footer{overflow-wrap:anywhere;font-size:12px;}}
 @media(max-width:360px){.hero-copy{padding:26px 18px;}.hero-copy h2{font-size:26px;}.roast-photos{grid-template-columns:1fr;gap:18px;}.roast-photos figure{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;}.roast-photos figcaption{text-align:left;}.roast-photos b{font-size:16px;}.roast-photos span{font-size:12px;}.price{font-size:1.35rem;}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;}}
-    </style>
+    
+.specialty-guide{margin:46px 0;text-align:left;border-top:1px solid #ded8c9;padding-top:38px;}
+.difference-intro{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:center;}.difference-intro h2{border:0;padding:0;margin:8px 0 12px;font-size:29px;line-height:1.5;}.difference-lead{font-size:19px;color:#234337;}.difference-intro figure{margin:0;text-align:center;}.difference-intro img{display:block;width:100%;max-width:230px;height:auto;border-radius:50%;margin:auto;}.difference-intro figcaption{font-size:11px;line-height:1.7;color:#706b60;margin-top:14px;}.difference-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px;}.difference-cards article{padding:24px;background:#f4efe3;border:1px solid #ded6c5;}.difference-cards h3{margin:8px 0 12px;font-size:20px;}.difference-cards p:last-child{margin-bottom:0;}.difference-note{font-size:12px;line-height:1.9;color:#67645c;margin:16px 0 24px;}.estudo-value{background:#233f33;color:#f8f3e7;padding:28px;}.estudo-value h3{font-size:22px;margin:8px 0 18px;}.estudo-value ul{margin:0 0 24px;padding-left:20px;}.estudo-value li{margin:12px 0;}.estudo-value .hero-cta{max-width:400px;}.difference-sources{margin-top:16px;font-size:12px;}.specialty-guide .eyebrow{margin-top:0;}@media(max-width:700px){.specialty-guide{margin:30px 0;padding-top:28px;}.difference-intro{grid-template-columns:1fr;gap:20px;}.difference-intro h2{font-size:24px;}.difference-intro img{max-width:160px;}.difference-intro p,.difference-cards p,.estudo-value li{font-size:14px;}.difference-cards{grid-template-columns:1fr;gap:14px;}.difference-cards article{padding:20px;}.difference-cards h3{font-size:19px;}.estudo-value{padding:22px 18px;}.estudo-value h3{font-size:21px;}.difference-sources{overflow-wrap:anywhere;}}
+</style>
 </head>
 <body>
 
@@ -210,6 +213,20 @@ a:focus-visible,summary:focus-visible {outline:3px solid #a6732b;outline-offset:
       <figure class="coffee-photo"><img src="images/ai-coffee-hands-1200.jpg" srcset="images/ai-coffee-hands-600.jpg 600w, images/ai-coffee-hands-1200.jpg 1200w" sizes="(max-width: 700px) calc(100vw - 40px), 440px" alt="胸から下の手元でドリッパーにお湯を注ぐAI生成のイメージ画像" width="1200" height="800" fetchpriority="high"></figure>
     </section>
     <div class="intro-line"><p>シングルオリジンの個性を大切に、その時々の素材と向き合う。<br>毎日のコーヒーに、自分だけの「好き」を。</p></div>
+
+<section class="specialty-guide" id="coffee-difference" aria-labelledby="difference-title">
+  <div class="difference-intro">
+    <div><p class="eyebrow">WHY SPECIALTY COFFEE?</p><h2 id="difference-title">いつもの一杯と、何が違う？</h2><p class="difference-lead">香りや余韻まで、楽しむ一杯へ。</p><p>各国の厳選したスペシャルティコーヒーをお届けします。価格だけでは伝わらない、味わいを選ぶ楽しさをご紹介します。</p></div>
+    <figure><img src="images/roast-medium.jpg" alt="焙煎豆の比較イメージ。現在販売中の豆の写真ではありません" width="600" height="600" loading="lazy"><figcaption>焙煎豆のイメージ。現在の販売商品ではありません。</figcaption></figure>
+  </div>
+  <div class="difference-cards">
+    <article><p class="eyebrow">SPECIALTY</p><h3>香りや風味の個性を楽しむ</h3><p>スペシャルティコーヒーでは、豆の個性を感じる香りや風味、甘さの印象、飲んだ後の余韻に注目します。SCAJでは、カップの中の味わいと、生産から抽出までの品質管理を重視しています。</p></article>
+    <article><p class="eyebrow">EVERYDAY</p><h3>毎日の飲みやすさで選ぶ</h3><p>手頃な価格のコーヒーには、毎日続けやすく、飲み慣れた味を選びやすい魅力があります。価格を抑えて気軽に楽しみたい方にも、大切な選択肢です。</p></article>
+  </div>
+  <p class="difference-note">価格だけで品質や好みは決まりません。手頃な価格でも個性のあるコーヒーはあり、高価なら誰にとってもおいしい、というわけではありません。</p>
+  <div class="estudo-value"><p class="eyebrow">CHOOSE YOUR CUP</p><h3>豆は当店におまかせ。焙煎は、あなたの好みで。</h3><ul><li><strong>その時のおすすめを。</strong>銘柄が随時入れ替わるシングルオリジンを、ご注文ごとに当店が選んでお届けします。</li><li><strong>12段階から選ぶ。</strong>焙煎豆は1〜12の焙煎度を指定できます。酸味や苦味のお好みに合わせてお楽しみください。</li><li><strong>100gから試せる。</strong>一袋でも全国送料無料。ご自宅で、自分の好きな一杯を探してみませんか。</li></ul><a class="hero-cta" href="#order">おすすめのコーヒーを選ぶ <span aria-hidden="true">↗</span></a></div>
+  <details class="credits difference-sources"><summary>比較の参考・写真の出典</summary><p>一般的な品質の考え方：<a href="https://scaj.org/about/specialty-coffee">SCAJ「スペシャルティコーヒーの定義」</a> · <a href="https://sca.coffee/what-is-specialty-coffee">SCA「What is Specialty Coffee」</a>。仕入れについての説明は当店の取扱方針です。評価点や認証の取得を示すものではありません。</p><p>写真：Dan Bollinger / Wikimedia Commons「<a href="https://commons.wikimedia.org/wiki/File:425_degrees_city_roast_coffee.png">City roast</a>」、<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>。サイズ縮小・JPEG変換のみ。画像派生物は同じライセンスで提供しています。</p></details>
+</section>
 
     <div class="current-bean" id="order">
         <div class="free-shipping-badge">FREE SHIPPING</div>
