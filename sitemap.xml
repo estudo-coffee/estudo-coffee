@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://estudo-coffee.com/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://estudo-coffee.com/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/basic-brew/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/brewing-methods/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/caffeine-night-tea-decaf/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/children-coffee-health-evidence/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/coffee-dessert-and-irish/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/coffee-origins/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/coffee-storage/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/espresso-drip/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/grounds-reuse-short/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/iced-coldbrew-soda/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/learn/roast-choice/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/matsudo/town-and-coffee/</loc></url>
+  <url><loc>https://estudo-coffee.com/journal/thoughts/morning-cup/</loc></url>
+</urlset>

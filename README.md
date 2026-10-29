@@ -10,7 +10,7 @@ Static GitHub Pages site at https://estudo-coffee.com/.
 - Existing Stripe, LINE, Instagram, logo, CNAME and address are preserved.
 
 ## Implementation
-No build step, JavaScript, analytics, cookies, external fonts, or autoplay audio. Serve locally with `python -m http.server 8311`.
+No build step, analytics, cookies, external fonts, or autoplay audio. JavaScript controls the owner-provided BGM only; playback starts on an explicit button click and stops on navigation. Serve locally with `python -m http.server 8311`.
 The original coffee/cup SVG is authored for this site, with a visible illustration disclaimer. Existing logo.png is the operator's pre-existing asset. No competitor imagery, copy, recordings, or paid stock assets are used.
 
 ## Design research (2026-10-23)
@@ -22,3 +22,6 @@ Validate unique IDs, fragment targets, one H1, exact preserved checkout URLs, an
 
 ## Deployment / rollback
 GitHub Pages publishes the main branch. Keep CNAME unchanged. Revert the refresh commit to restore the preceding design; never rewrite history or force-push.
+
+## Approved journal and BGM release (2026-10-29)
+Thirteen reviewed articles across coffee learning, Matsudo, and the owner story; licensed/public-domain image credits remain on their pages. Cozy Café Jazz is the owner-provided Suno track, with owner confirmation of a paid plan at creation. The private purchase-screen demo is not part of production. Real Stripe checkout URLs and prices are unchanged.
